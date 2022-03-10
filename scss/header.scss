@@ -1,8 +1,8 @@
 @use 'base';
 header {
-    border: #a7ddf2 2px solid;
+    // border: #a7ddf2 2px solid;
     .content {
-        width: 100%;
+        width: 80%;
         // border: #9e1d98 2px solid;
         // background-color: var(--secondary-color1);
         // background-image: radial-gradient(circle, var(--secondary-color1), var(--primary-color));
@@ -10,8 +10,8 @@ header {
         margin: auto;
         padding: 3%;
         .logo1 {
-            max-width: 120px;
-            height: 96px;
+            max-width: base.rem(122);
+            height: base.rem(96);
             background-image: url("../img/header/logo.png");
             background-size: cover;
             position: relative;
@@ -35,8 +35,8 @@ header {
         }
         .dot {
             cursor: pointer;
-            height: 13px;
-            width: 13px;
+            height: base.rem(13);
+            width: base.rem(13);
             margin: 0 2px;
             background-color: #bbb;
             border-radius: 50%;
@@ -90,23 +90,24 @@ header {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        // border-bottom: 1px gray solid;
         .size1 {
             width: 20%;
-            height: 110px;
+            height: base.rem(105);
             background-image: url("../img/hang-camera/dahua-lg.png");
             background-size: cover;
         }
         .size2 {
             width: 20%;
-            height: 120px;
+            height: base.rem(125);
             background-image: url("../img/hang-camera/ezviz-lg.png");
             background-size: cover;
             object-fit: cover;
             margin-top: -1%;
         }
         .size3 {
-            width: 310px;
-            height: 90px;
+            width: base.rem(310);
+            height: base.rem(90);
             margin-top: 1%;
             ;
             background-image: url("../img/hang-camera/hikvision-removebg-preview.png");
@@ -114,10 +115,72 @@ header {
         }
         .size4 {
             width: 15%;
-            height: 160px;
+            height: base.rem(160);
             background-image: url("../img/hang-camera/hilook-lg.png");
             background-size: cover;
             margin-top: -3%;
+        }
+    }
+    .gioi-thieu-text {
+        text-align: center;
+        // margin: 0 auto;
+        h2 {
+            margin: 3%;
+            color: deepskyblue;
+        }
+        p {
+            width: 60%;
+            font-size: .9rem;
+            background-color: var(--secondary-color3);
+            margin: 2% auto;
+        }
+    }
+}
+
+#du-an {
+    padding: 5%;
+    h4 {
+        color: deepskyblue;
+    }
+    //chứa toàn bô thông tin dự án đã làm, khoảng 8 cái
+    .du-an__list {
+        // border: 2px tomato solid;
+        position: relative;
+        margin: auto;
+        width: 80%;
+        .list-content {
+            display: flex;
+            flex-direction: column;
+            // justify-content: space-around;
+            .list-item {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                // margin-top: 3%;
+                .list-img {
+                    margin: 3%;
+                    width: 25%;
+                    img {
+                        border-radius: 7px;
+                        width: 100%;
+                        height: 200px;
+                        object-fit: cover;
+                    }
+                }
+                .list-text {
+                    height: base.rem(150);
+                    width: 40%;
+                    margin-top: 5%;
+                    p {
+                        border-radius: 7px;
+                        padding: 2%;
+                        background-color: var(--secondary-color3);
+                    }
+                }
+            }
+            .reverse {
+                flex-direction: row-reverse;
+            }
         }
     }
 }

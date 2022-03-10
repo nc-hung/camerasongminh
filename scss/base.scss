@@ -1,7 +1,13 @@
+@use 'sass:math';
+@function rem($pixels, $context: 16) {
+    @return (math.div($pixels, $context)) * 1rem;
+}
+
 :root {
     --primary-color: #f2cb05;
     --secondary-color1: #ebe8e3de;
     --secondary-color2: #a7ddf2;
+    --secondary-color3: #a7ddf254
 }
 
 body {

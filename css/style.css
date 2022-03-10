@@ -3,25 +3,23 @@
   --primary-color: #f2cb05;
   --secondary-color1: #ebe8e3de;
   --secondary-color2: #a7ddf2;
+  --secondary-color3: #a7ddf254 ;
 }
 
 body {
   background-image: radial-gradient(circle, var(--secondary-color1), var(--primary-color));
 }
 
-header {
-  border: #a7ddf2 2px solid;
-}
 header .content {
-  width: 100%;
+  width: 80%;
   position: relative;
   margin: auto;
   padding: 3%;
   /* khi được hover, active đổi màu nền */
 }
 header .content .logo1 {
-  max-width: 120px;
-  height: 96px;
+  max-width: 7.625rem;
+  height: 6rem;
   background-image: url("../img/header/logo.png");
   background-size: cover;
   position: relative;
@@ -40,8 +38,8 @@ header .content .item img {
 }
 header .content .dot {
   cursor: pointer;
-  height: 13px;
-  width: 13px;
+  height: 0.8125rem;
+  width: 0.8125rem;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
@@ -89,31 +87,88 @@ header .content .fade1 {
 }
 #gioi-thieu .hang-camera .size1 {
   width: 20%;
-  height: 110px;
+  height: 6.5625rem;
   background-image: url("../img/hang-camera/dahua-lg.png");
   background-size: cover;
 }
 #gioi-thieu .hang-camera .size2 {
   width: 20%;
-  height: 120px;
+  height: 7.8125rem;
   background-image: url("../img/hang-camera/ezviz-lg.png");
   background-size: cover;
   object-fit: cover;
   margin-top: -1%;
 }
 #gioi-thieu .hang-camera .size3 {
-  width: 310px;
-  height: 90px;
+  width: 19.375rem;
+  height: 5.625rem;
   margin-top: 1%;
   background-image: url("../img/hang-camera/hikvision-removebg-preview.png");
   background-size: cover;
 }
 #gioi-thieu .hang-camera .size4 {
   width: 15%;
-  height: 160px;
+  height: 10rem;
   background-image: url("../img/hang-camera/hilook-lg.png");
   background-size: cover;
   margin-top: -3%;
+}
+#gioi-thieu .gioi-thieu-text {
+  text-align: center;
+}
+#gioi-thieu .gioi-thieu-text h2 {
+  margin: 3%;
+  color: deepskyblue;
+}
+#gioi-thieu .gioi-thieu-text p {
+  width: 60%;
+  font-size: 0.9rem;
+  background-color: var(--secondary-color3);
+  margin: 2% auto;
+}
+
+#du-an {
+  padding: 5%;
+}
+#du-an h4 {
+  color: deepskyblue;
+}
+#du-an .du-an__list {
+  position: relative;
+  margin: auto;
+  width: 80%;
+}
+#du-an .du-an__list .list-content {
+  display: flex;
+  flex-direction: column;
+}
+#du-an .du-an__list .list-content .list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#du-an .du-an__list .list-content .list-item .list-img {
+  margin: 3%;
+  width: 25%;
+}
+#du-an .du-an__list .list-content .list-item .list-img img {
+  border-radius: 7px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+#du-an .du-an__list .list-content .list-item .list-text {
+  height: 9.375rem;
+  width: 40%;
+  margin-top: 5%;
+}
+#du-an .du-an__list .list-content .list-item .list-text p {
+  border-radius: 7px;
+  padding: 2%;
+  background-color: var(--secondary-color3);
+}
+#du-an .du-an__list .list-content .reverse {
+  flex-direction: row-reverse;
 }
 
 /*# sourceMappingURL=style.css.map */
