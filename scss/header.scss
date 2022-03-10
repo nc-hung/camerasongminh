@@ -1,0 +1,123 @@
+@use 'base';
+header {
+    border: #a7ddf2 2px solid;
+    .content {
+        width: 100%;
+        // border: #9e1d98 2px solid;
+        // background-color: var(--secondary-color1);
+        // background-image: radial-gradient(circle, var(--secondary-color1), var(--primary-color));
+        position: relative;
+        margin: auto;
+        padding: 3%;
+        .logo1 {
+            max-width: 120px;
+            height: 96px;
+            background-image: url("../img/header/logo.png");
+            background-size: cover;
+            position: relative;
+            margin: auto;
+            margin-bottom: 3%;
+        }
+        .slideshow {
+            // border: #dd53b4 2px solid;
+            // width: 100%;
+            // height: 500px;
+            max-width: 60%;
+            position: relative;
+            margin: auto;
+        }
+        .item {
+            img {
+                border-radius: 7px;
+                animation: zoom 1s ease;
+                overflow: hidden;
+            }
+        }
+        .dot {
+            cursor: pointer;
+            height: 13px;
+            width: 13px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        /* khi được hover, active đổi màu nền */
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+        .hide {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        .fade1 {
+            animation-name: fade;
+            animation-duration: 1.5s;
+            overflow: hidden;
+        }
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        @keyframes zoom {
+            0% {
+                // transform: scale(2);
+                // transform: translate3d(50px);
+                margin-left: 10%;
+                opacity: 0.8
+            }
+            100% {
+                margin-left: 0%;
+                // transform: scale(1);
+                // transform: scaleX(1);
+                // transform: translate3d(1000px);
+                opacity: 1
+            }
+        }
+    }
+}
+
+#gioi-thieu {
+    .hang-camera {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .size1 {
+            width: 20%;
+            height: 110px;
+            background-image: url("../img/hang-camera/dahua-lg.png");
+            background-size: cover;
+        }
+        .size2 {
+            width: 20%;
+            height: 120px;
+            background-image: url("../img/hang-camera/ezviz-lg.png");
+            background-size: cover;
+            object-fit: cover;
+            margin-top: -1%;
+        }
+        .size3 {
+            width: 310px;
+            height: 90px;
+            margin-top: 1%;
+            ;
+            background-image: url("../img/hang-camera/hikvision-removebg-preview.png");
+            background-size: cover;
+        }
+        .size4 {
+            width: 15%;
+            height: 160px;
+            background-image: url("../img/hang-camera/hilook-lg.png");
+            background-size: cover;
+            margin-top: -3%;
+        }
+    }
+}
